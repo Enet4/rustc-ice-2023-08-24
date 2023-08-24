@@ -1,0 +1,16 @@
+[package]
+name = "rust-ice-2023-08"
+publish = false
+version = "0.1.0"
+authors = ["Eduardo Pinho <enet4mikeenet@gmail.com>"]
+description = "Rust ICE reproducible, based on crate dicom-parser"
+edition = "2018"
+license = "MIT OR Apache-2.0"
+
+[features]
+default = []
+dicom-encoding = ["dep:dicom-encoding"]
+
+[dependencies]
+dicom-encoding = { version = "0.6.0", optional = true }
+
